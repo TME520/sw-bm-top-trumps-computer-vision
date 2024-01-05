@@ -13,8 +13,11 @@ while True:
 	if data: 
 		a=data 
 		print(f'a: {a}')
-		if a == 'SWTOPTRUMPSBM001':
-			print('SWTOPTRUMPSBM001 - First Order Stormtrooper (15/2/13/5/5)')
+		match a:
+			case 'SWTOPTRUMPSBM001':
+				print('SWTOPTRUMPSBM001 - First Order Stormtrooper (15/2/13/5/5)')
+			case _:
+				print('You are not seeing that message')
 		break
 	cv2.imshow("QRCODEscanner", img)
 	if cv2.waitKey(1) == ord("q"):
