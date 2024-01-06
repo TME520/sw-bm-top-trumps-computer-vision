@@ -6,3 +6,10 @@ An attempt at using Computer Vision (Open CV) to create an AI player for Top Tru
 ```
 pip3 install opencv-python
 ```
+
+# Usage
+
+```
+python3 ./qrcode2.py
+```
+
