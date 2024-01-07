@@ -11,6 +11,9 @@ cap = cv2.VideoCapture(0)
 # initialize the cv2 QRCode detector
 detector = cv2.QRCodeDetector()
 
+playername = input('What is your name?\n')
+print(f'Hello {playername}')
+
 while True:
 	try:
 		_, img = cap.read()
