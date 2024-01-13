@@ -21,6 +21,8 @@ current_step = 1
 current_player = 'p1'
 quit_game = False
 
+print(f'Stage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
+
 while quit_game == False:
 	try:
 		_, img = cap.read()
@@ -34,6 +36,7 @@ while quit_game == False:
 		olda = a
 		a = data
 		if a != olda:
+			print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 			match a:
 				case 'SWTOPTRUMPSBM001':
 					print('-> Card: SWTOPTRUMPSBM001\n\t> First Order Stormtrooper (15/2/13/5/5)')
