@@ -7,37 +7,19 @@ import webbrowser
 
 a = ''
 olda = a
+cap = cv2.VideoCapture(0)
+# initialize the cv2 QRCode detector
+detector = cv2.QRCodeDetector()
+
 playername = input('What is your name?\n')
 print(f'Hello {playername}')
+
 # current_stage can be: init, start, loop, end
 current_stage = 'init'
 current_step = 1
 # current_player can be: p1, cmp 
 current_player = 'p1'
-quit_game = True 
-
-try:
-	# Internal webcam
-	cap = cv2.VideoCapture(0)
-	# initialize the cv2 QRCode detector 
-	detector = cv2.QRCodeDetector()
-	quit_game == False
-except Exception as e:
-	print('Failed to open webcam')
-	pass
-
-if cap.isOpened():
-	print('Webcam ready')
-else:
-	try:
-		# External webcam
-		cap = cv2.VideoCapture(2)
-		# initialize the cv2 QRCode detector 
-		detector = cv2.QRCodeDetector()
-		quit_game == False
-	except Exception as e:
-		print('Failed to open webcam')
-		pass
+quit_game = False
 
 while quit_game == False:
 	try:
