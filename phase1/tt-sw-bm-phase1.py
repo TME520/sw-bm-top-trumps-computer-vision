@@ -104,7 +104,7 @@ while quit_game == False:
 	if cv2.waitKey(1) == ord("q"):
 		quit_game = True
 
-b=webbrowser.open(str(a))
+# b=webbrowser.open(str(a))
 cap.release()
 cv2.destroyAllWindows()
 
