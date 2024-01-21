@@ -1,6 +1,34 @@
 cardData = {
 	'SWTOPTRUMPSBM001':{'cardName':'First Order Stormtrooper', 'style':15, 'ambition':2, 'pride':13, 'leadership':5, 'ttgl':5},
-	'SWTOPTRUMPSBM002':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11}
+	'SWTOPTRUMPSBM002':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM003':{'cardName':'Padme Amidala', 'style':18, 'ambition':17, 'pride':38, 'leadership':135, 'ttgl':21},
+	'SWTOPTRUMPSBM004':{'cardName':'Obi-Wan Kenobi', 'style':45, 'ambition':13, 'pride':32, 'leadership':125, 'ttgl':21},
+	'SWTOPTRUMPSBM005':{'cardName':'Mace Windu', 'style':25, 'ambition':14, 'pride':33, 'leadership':130, 'ttgl':24},
+	'SWTOPTRUMPSBM006':{'cardName':'General Grievous', 'style':33, 'ambition':17, 'pride':38, 'leadership':85, 'ttgl':19},
+	'SWTOPTRUMPSBM007':{'cardName':'Luke Skywalker', 'style':8, 'ambition':7, 'pride':22, 'leadership':70, 'ttgl':14},
+	'SWTOPTRUMPSBM008':{'cardName':'Leia Organa', 'style':42, 'ambition':13, 'pride':32, 'leadership':150, 'ttgl':27},
+	'SWTOPTRUMPSBM009':{'cardName':'Han Solo', 'style':47, 'ambition':7, 'pride':22, 'leadership':110, 'ttgl':23},
+	'SWTOPTRUMPSBM010':{'cardName':'Chewbacca', 'style':27, 'ambition':9, 'pride':25, 'leadership':75, 'ttgl':13},
+	'SWTOPTRUMPSBM011':{'cardName':'Lando Calrissian', 'style':50, 'ambition':22, 'pride':47, 'leadership':115, 'ttgl':24},
+	'SWTOPTRUMPSBM012':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM013':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM014':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM015':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM016':{'cardName':'First Order Stormtrooper', 'style':15, 'ambition':2, 'pride':13, 'leadership':5, 'ttgl':5},
+	'SWTOPTRUMPSBM017':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM018':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM019':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM020':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM021':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM022':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM023':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM024':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM025':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM026':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM027':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM028':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM029':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+	'SWTOPTRUMPSBM030':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11}
 }
 
 print(cardData['SWTOPTRUMPSBM002']['ttgl'])
