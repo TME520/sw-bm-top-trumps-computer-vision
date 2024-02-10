@@ -47,6 +47,7 @@ while quit_game == False:
     a = data
 
     if a != olda:
+      os.system('clear')
       draw_interface()
       print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
