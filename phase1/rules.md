@@ -10,9 +10,13 @@ That game is developed on my spare time, so I must use an incremental approach t
 
 Star Wars Top Trumps Battle Mat is not my intellectual property. TOP TRUMPS is a registered trademark of Winning Moves UK Ltd. You need to buy a box of the game in order to use that software. That software is not supported in any way by the owner of the game. The original game is sold in stores and is copyrighted by Winning Moves UK Limited (2023).
 
-## Stages and steps
+## How to run Phase 1
 
-### Glossary
+```
+python3 ./tt-sw-bm-phase1.py
+```
+
+## Glossary
 
 #### QR-cam
 
@@ -28,6 +32,8 @@ P1 is Player 1, the human player. CMP is the computer.
 A round is made of the comparison of two cards.
 A battle is made of 3 rounds.
 Whoever wins 7 battles 1st is considered as victorious.
+
+## Stages and steps
 
 ### Init
 
