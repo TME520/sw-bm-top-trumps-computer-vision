@@ -23,9 +23,9 @@ python3 ./tt-sw-bm-phase1.py
 To QR-cam a card is to show the QR code printed on it to the webcam of the computer against which you're playing.
 It is a way for the AI to keep track of the state of the battle. As a rule of thumb, QR-cam every card you take from the deck. The AI won't know which cards you have in hand unless you pick the Grand Master difficulty level.
 
-#### P1 & CMP
+#### Human Player & Computer Player
 
-P1 is Player 1, the human player. CMP is the computer.
+Human Player is Player 1, the human player. Computer Player is the computer.
 
 #### Rounds, Battles
 
@@ -40,20 +40,20 @@ Whoever wins 7 battles 1st is considered as victorious.
 This stage is there to determine who will get the initiative.
 
 - Shuffle the deck
-- P1 draws 1 card from the deck and QR-cams it
-- CMP draws 1 card from the deck and QR-cams it
-- The AI compares the Top Trumps Galactic Legend category of both cards. If P1 TTGL > CMP TTGL then P1 has initiative. If CMP TTGL > P1 TTGL then CMP has initiative. If both values are equal, discard cards, redraw and compare again.
+- Human Player draws 1 card from the deck and QR-cams it
+- Computer Player draws 1 card from the deck and QR-cams it
+- The AI compares the Top Trumps Galactic Legend category of both cards. If Human Player TTGL > Computer Player TTGL then Human Player has initiative. If Computer Player TTGL > Human Player TTGL then Computer Player has initiative. If both values are equal, discard cards, redraw and compare again.
 - Return the cards to the deck
 - Shuffle the deck
 
 ### Start
 
-- P1 draws 3 cards from the deck and QR-cams it
-- CMP draws 3 cards from the deck and QR-cams it
+- Human Player draws 3 cards from the deck and QR-cams it
+- Computer Player draws 3 cards from the deck and QR-cams it
 
 ### Loop
 
-If P1 has initiative, he plays 1st, otherwise, CMP does.
+If Human Player has initiative, he plays 1st, otherwise, Computer Player does.
 
 - Player X picks 1 card from hand and places it in a category of his choice
 - Player Y picks 1 card from hand and places it in the same category
