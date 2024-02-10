@@ -7,8 +7,10 @@ import webbrowser
 import os
 
 def draw_interface():
-  print('|--------------------------------------|\n')
-  print('|--------------------------------------|\n')
+  print('|------------------------------------------------------------------------------|')
+  for loop_cntr in range(25):
+    print('|                                                                              |')
+  print('|------------------------------------------------------------------------------|')
 
 a = ''
 olda = a
@@ -45,6 +47,7 @@ while quit_game == False:
     a = data
 
     if a != olda:
+      draw_interface()
       print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
       match a:
