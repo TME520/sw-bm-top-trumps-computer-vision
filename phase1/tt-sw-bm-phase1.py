@@ -1,16 +1,30 @@
 try:
-	import cv2
+  import cv2
 except ImportError:
-	print('Cannot import cv2 computer vision PIP module')
+  print('Cannot import cv2 computer vision PIP module')
 
 import webbrowser
 import os
 
-def draw_interface():
-  print('|------------------------------------------------------------------------------|')
-  for loop_cntr in range(25):
-    print('|                                                                              |')
-  print('|------------------------------------------------------------------------------|')
+def draw_interface(player_name, stage, step, battle, round, instructions):
+  print('--------------------------------------------------------------------------------')
+  print(f'>> {player_name} <<')
+  print(f'> Stage: {stage}') 
+  print(f'> Step: {step}')
+  print(f'[{battle}/{round}]\n')
+  print(f'> Instructions: {instructions}')
+  for loop_cntr in range(18):
+    print('                                                                                ')
+  print('--------------------------------------------------------------------------------')
+
+init_instructions = {
+  'init01':{'text':'Shuffle the deck'},
+  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it'},
+  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it'},
+  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards'},
+  'init05':{'text':'Return the cards to the deck'},
+  'init06':{'text':'Shuffle the deck again'}
+}
 
 a = ''
 olda = a
@@ -27,10 +41,10 @@ print(f'\n\t>> Hello {playername}\n')
 current_player = 'Human Player'
 # current_stage can be: init, start, loop, end
 current_stage = 'Init'
-current_step = 1
+current_step = 'init01'
 current_battle = 1
 current_round = 1
-current_instructions = ''
+current_instructions = init_instructions[current_step]['text']
 quit_game = False
 
 print(f'\n\t>> Stage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
@@ -51,7 +65,7 @@ while quit_game == False:
 
     if a != olda:
       os.system('clear')
-      draw_interface()
+      draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions)
       print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
       match a:
