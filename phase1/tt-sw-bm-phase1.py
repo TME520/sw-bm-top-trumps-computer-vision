@@ -23,11 +23,14 @@ os.system('clear')
 playername = input('What is your name?\n')
 print(f'\n\t>> Hello {playername}\n')
 
+# current_player can be: Human Player, Computer Player 
+current_player = 'Human Player'
 # current_stage can be: init, start, loop, end
-current_stage = 'init'
+current_stage = 'Init'
 current_step = 1
-# current_player can be: p1, cmp 
-current_player = 'p1'
+current_battle = 1
+current_round = 1
+current_instructions = ''
 quit_game = False
 
 print(f'\n\t>> Stage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
