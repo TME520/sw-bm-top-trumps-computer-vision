@@ -6,14 +6,15 @@ except ImportError:
 import webbrowser
 import os
 
-def draw_interface(player_name, stage, step, battle, round, instructions):
+def draw_interface(player_name, stage, step, battle, round, instructions, card):
   print('--------------------------------------------------------------------------------')
   print(f'>> {player_name} <<')
   print(f'> Stage: {stage}') 
   print(f'> Step: {step}')
   print(f'[{battle}/{round}]\n')
-  print(f'> Instructions: {instructions}')
-  for loop_cntr in range(18):
+  print(f'> Instructions: {instructions}\n\n')
+  print(f'> {card}')
+  for loop_cntr in range(16):
     print('                                                                                ')
   print('--------------------------------------------------------------------------------')
 
@@ -45,6 +46,7 @@ current_step = 'init01'
 current_battle = 1
 current_round = 1
 current_instructions = init_instructions[current_step]['text']
+current_card = ''
 quit_game = False
 
 print(f'\n\t>> Stage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
@@ -65,12 +67,11 @@ while quit_game == False:
 
     if a != olda:
       os.system('clear')
-      draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions)
-      print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
       match a:
         case 'SWTOPTRUMPSBM001':
-          print('-> Card: SWTOPTRUMPSBM001\n\t> First Order Stormtrooper (15/2/13/5/5)')
+          # print('-> Card: SWTOPTRUMPSBM001\n\t> First Order Stormtrooper (15/2/13/5/5)')
+          current_card = 'SWTOPTRUMPSBM001: First Order Stormtrooper (15/2/13/5/5)'
         case 'SWTOPTRUMPSBM002':
           print('-> Card: SWTOPTRUMPSBM002\n\t> Jango Fett (23/15/35/35/11)')
         case 'SWTOPTRUMPSBM003':
@@ -131,6 +132,9 @@ while quit_game == False:
           print('-> Card: SWTOPTRUMPSBM030\n\t> R2-D2 (53/5/18/20/10)')
         case _:
           print('That message you see not.')
+
+      draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions, current_card)
+      # print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
   cv2.imshow("QRCODEscanner", img)
 
