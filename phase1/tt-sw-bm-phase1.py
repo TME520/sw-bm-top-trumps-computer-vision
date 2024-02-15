@@ -133,7 +133,7 @@ while quit_game == False:
       draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions, current_card)
       # print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
-  cv2.imshow("QRCODEscanner", img)
+  # cv2.imshow("QRCODEscanner", img)
 
   if cv2.waitKey(1) == ord("q"):
     quit_game = True
