@@ -17,12 +17,12 @@ def draw_interface(player_name, stage, step, battle, round, instructions, card):
   print('--------------------------------------------------------------------------------')
 
 init_instructions = {
-  'init01':{'text':'Shuffle the deck'},
-  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it'},
-  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it'},
-  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards'},
-  'init05':{'text':'Return the cards to the deck'},
-  'init06':{'text':'Shuffle the deck again'}
+  'init01':{'text':'Shuffle the deck','validation':'press_space'},
+  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it','validation':'qrcam'},
+  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it','validation':'qrcam'},
+  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards','validation':'auto_ai'},
+  'init05':{'text':'Return the cards to the deck','validation':'press_space'},
+  'init06':{'text':'Shuffle the deck again','validation':'press_space'}
 }
 
 a = ''
@@ -37,7 +37,7 @@ playername = input('What is your name?\n')
 print(f'\n\t>> Hello {playername}\n')
 
 # current_player can be: Human Player, Computer Player 
-current_player = 'Human Player'
+current_player = playername
 # current_stage can be: init, start, loop, end
 current_stage = 'Init'
 current_step = 'init01'
@@ -47,7 +47,9 @@ current_instructions = init_instructions[current_step]['text']
 current_card = ''
 quit_game = False
 
-print(f'\n\t>> Stage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
+os.system('clear')
+
+draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions, current_card)
 
 while quit_game == False:
   try:
@@ -131,7 +133,6 @@ while quit_game == False:
           current_card = 'That message you see not.'
 
       draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions, current_card)
-      # print(f'\n\nStage: {current_stage}\nStep: {current_step}\nPlayer: {current_player}\n\n')
 
   # cv2.imshow("QRCODEscanner", img)
 
