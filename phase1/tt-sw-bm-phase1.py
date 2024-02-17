@@ -17,12 +17,12 @@ def draw_interface(player_name, stage, step, battle, round, instructions, card):
   print('--------------------------------------------------------------------------------')
 
 init_instructions = {
-  'init01':{'text':'Shuffle the deck','validation':'press_enter'},
-  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it','validation':'qrcam'},
-  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it','validation':'qrcam'},
-  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards','validation':'auto_ai'},
-  'init05':{'text':'Return the cards to the deck','validation':'press_enter'},
-  'init06':{'text':'Shuffle the deck again','validation':'press_enter'}
+  'init01':{'text':'Shuffle the deck','validation':'Press ENTER'},
+  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it','validation':'QR cam'},
+  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it','validation':'QR cam'},
+  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards','validation':'Auto AI'},
+  'init05':{'text':'Return the cards to the deck','validation':'Press ENTER'},
+  'init06':{'text':'Shuffle the deck again','validation':'Press ENTER'}
 }
 
 a = ''
@@ -141,14 +141,14 @@ while quit_game == False:
     quit_game = True
 
   match current_validation:
-    case 'press_enter':
+    case 'Press ENTER':
       input()
       print('ENTER pressed')
-    case 'qrcam':
+    case 'QR cam':
       print('Waiting for QR cam')
-    case 'auto_ai':
+    case 'Auto AI':
       print('Waiting on AI')
-    case 'auto_human':
+    case 'Auto Human':
       print('Waiting on Human')
     case _:
       print('You no see this')
