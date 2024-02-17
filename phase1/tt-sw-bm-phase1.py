@@ -17,12 +17,12 @@ def draw_interface(player_name, stage, step, battle, round, instructions, card):
   print('--------------------------------------------------------------------------------')
 
 init_instructions = {
-  'init01':{'text':'Shuffle the deck','validation':'press_space'},
+  'init01':{'text':'Shuffle the deck','validation':'press_enter'},
   'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it','validation':'qrcam'},
   'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it','validation':'qrcam'},
   'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards','validation':'auto_ai'},
-  'init05':{'text':'Return the cards to the deck','validation':'press_space'},
-  'init06':{'text':'Shuffle the deck again','validation':'press_space'}
+  'init05':{'text':'Return the cards to the deck','validation':'press_enter'},
+  'init06':{'text':'Shuffle the deck again','validation':'press_enter'}
 }
 
 a = ''
@@ -43,7 +43,8 @@ current_stage = 'Init'
 current_step = 'init01'
 current_battle = 1
 current_round = 1
-current_instructions = init_instructions[current_step]['text']
+current_instructions = init_instructions[current_step]['text'] + ' (' + init_instructions[current_step]['validation'] + ')'
+current_validation = init_instructions[current_step]['validation']
 current_card = ''
 quit_game = False
 
@@ -138,6 +139,19 @@ while quit_game == False:
 
   if cv2.waitKey(1) == ord("q"):
     quit_game = True
+
+  match current_validation:
+    case 'press_enter':
+      input()
+      print('ENTER pressed')
+    case 'qrcam':
+      print('Waiting for QR cam')
+    case 'auto_ai':
+      print('Waiting on AI')
+    case 'auto_human':
+      print('Waiting on Human')
+    case _:
+      print('You no see this')
 
 cap.release()
 cv2.destroyAllWindows()

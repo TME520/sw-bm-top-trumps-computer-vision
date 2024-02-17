@@ -41,12 +41,12 @@ This stage is there to determine who will get the initiative.
 
 | Step | Instructions | Action |
 | ---- | ------------ | ------ |
-| 1 | Shuffle the deck | Press SPACE |
+| 1 | Shuffle the deck | Press ENTER |
 | 2 | Human Player draws 1 card from the deck and QR-cams it | QR cam |
 | 3 | Computer Player draws 1 card from the deck and QR-cams it | QR cam |
 | 4 | AI compares the Top Trumps Galactic Legend category of both cards. If Human Player TTGL > Computer Player TTGL then Human Player has initiative. If Computer Player TTGL > Human Player TTGL then Computer Player has initiative. If both values are equal, discard cards, redraw and compare again. | Auto AI |
-| 5 | Return the cards to the deck | Press SPACE |
-| 6 | Shuffle the deck again | Press SPACE |
+| 5 | Return the cards to the deck | Press ENTER |
+| 6 | Shuffle the deck again | Press ENTER |
 
 ### Start
 
