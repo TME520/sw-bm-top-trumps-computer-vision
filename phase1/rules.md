@@ -39,12 +39,14 @@ Whoever wins 7 battles 1st is considered as victorious.
 
 This stage is there to determine who will get the initiative.
 
-- Shuffle the deck
-- Human Player draws 1 card from the deck and QR-cams it
-- Computer Player draws 1 card from the deck and QR-cams it
-- The AI compares the Top Trumps Galactic Legend category of both cards. If Human Player TTGL > Computer Player TTGL then Human Player has initiative. If Computer Player TTGL > Human Player TTGL then Computer Player has initiative. If both values are equal, discard cards, redraw and compare again.
-- Return the cards to the deck
-- Shuffle the deck
+| Step | Instructions | Action |
+| ---- | ------------ | ------ |
+| 1 | Shuffle the deck | Press SPACE |
+| 2 | Human Player draws 1 card from the deck and QR-cams it | QR cam |
+| 3 | Computer Player draws 1 card from the deck and QR-cams it | QR cam |
+| 4 | AI compares the Top Trumps Galactic Legend category of both cards. If Human Player TTGL > Computer Player TTGL then Human Player has initiative. If Computer Player TTGL > Human Player TTGL then Computer Player has initiative. If both values are equal, discard cards, redraw and compare again. | Auto AI |
+| 5 | Return the cards to the deck | Press SPACE |
+| 6 | Shuffle the deck again | Press SPACE |
 
 ### Start
 
