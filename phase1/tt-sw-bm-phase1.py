@@ -7,6 +7,7 @@ import webbrowser
 import os
 
 def draw_interface(player_name, stage, step, battle, round, instructions, card):
+  os.system('clear')
   print('--------------------------------------------------------------------------------')
   print(f'>> {player_name} <<')
   print(f'> Stage: {stage}') 
@@ -17,12 +18,12 @@ def draw_interface(player_name, stage, step, battle, round, instructions, card):
   print('--------------------------------------------------------------------------------')
 
 init_instructions = {
-  'init01':{'text':'Shuffle the deck','validation':'Press ENTER'},
-  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it','validation':'QR cam'},
-  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it','validation':'QR cam'},
-  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards','validation':'Auto AI'},
-  'init05':{'text':'Return the cards to the deck','validation':'Press ENTER'},
-  'init06':{'text':'Shuffle the deck again','validation':'Press ENTER'}
+  'init01':{'text':'Shuffle the deck','validation':'Press ENTER','next':'init02'},
+  'init02':{'text':'Human Player draws 1 card from the deck and QR-cams it','validation':'QR cam','next':'init03'},
+  'init03':{'text':'Computer Player draws 1 card from the deck and QR-cams it','validation':'QR cam','next':'init04'},
+  'init04':{'text':'AI compares the Top Trumps Galactic Legend category of both cards','validation':'Auto AI','next':'init05'},
+  'init05':{'text':'Return the cards to the deck','validation':'Press ENTER','next':'init06'},
+  'init06':{'text':'Shuffle the deck again','validation':'Press ENTER','next':'init01'}
 }
 
 a = ''
@@ -47,6 +48,7 @@ current_instructions = init_instructions[current_step]['text'] + ' (' + init_ins
 current_validation = init_instructions[current_step]['validation']
 current_card = ''
 quit_game = False
+refresh_screen = False
 
 os.system('clear')
 
@@ -144,8 +146,14 @@ while quit_game == False:
     case 'Press ENTER':
       input()
       print('ENTER pressed')
+      current_step = init_instructions[current_step]['next']
+      current_instructions = init_instructions[current_step]['text'] + ' (' + init_instructions[current_step]['validation'] + ')'
+      current_validation = init_instructions[current_step]['validation']
+      refresh_screen = True
     case 'QR cam':
-      print('Waiting for QR cam')
+      if refresh_screen == True:
+        draw_interface(current_player, current_stage, current_step, current_battle, current_round, current_instructions, current_card)
+        refresh_screen = False
     case 'Auto AI':
       print('Waiting on AI')
     case 'Auto Human':
