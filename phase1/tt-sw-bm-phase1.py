@@ -14,20 +14,24 @@ except ImportError:
   print('Cannot import the OS PIP module')
 
 try:
-  import colorama
+  from colorama import Fore, Style
 except ImportError:
   print('Cannot import the Colorama PIP module\nTry: pip3 install colorama')
 
 def draw_interface(player_name, stage, step, battle, round, instructions, card):
   os.system('clear')
+  print(Fore.RED)
   print('--------------------------------------------------------------------------------')
+  print(Fore.WHITE)
   print(f'>> {player_name} <<')
   print(f'> Stage: {stage}') 
   print(f'> Step: {step}')
   print(f'[{battle}/{round}]\n')
   print(f'> Instructions: {instructions}\n\n')
   print(f'> {card}')
+  print(Fore.RED)
   print('--------------------------------------------------------------------------------')
+  print(Style.RESET_ALL)
 
 init_instructions = {
   'init01':{'text':'Shuffle the deck','validation':'Press ENTER','next':'init02'},
