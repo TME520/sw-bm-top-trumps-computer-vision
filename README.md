@@ -5,6 +5,7 @@ An attempt at using Computer Vision (Open CV) to create an AI player for [Top Tr
 
 ```
 pip3 install opencv-python
+pip3 install colorama
 ```
 
 # Usage

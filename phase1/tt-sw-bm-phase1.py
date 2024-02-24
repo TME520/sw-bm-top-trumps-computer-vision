@@ -1,10 +1,22 @@
 try:
   import cv2
 except ImportError:
-  print('Cannot import cv2 computer vision PIP module')
+  print('Cannot import cv2 computer vision PIP module\nTry: pip3 install opencv-python')
 
-import webbrowser
-import os
+try:
+  import webbrowser
+except ImportError:
+  print('Cannot import the Web browser PIP module')
+
+try:
+  import os
+except ImportError:
+  print('Cannot import the OS PIP module')
+
+try:
+  import colorama
+except ImportError:
+  print('Cannot import the Colorama PIP module\nTry: pip3 install colorama')
 
 def draw_interface(player_name, stage, step, battle, round, instructions, card):
   os.system('clear')
