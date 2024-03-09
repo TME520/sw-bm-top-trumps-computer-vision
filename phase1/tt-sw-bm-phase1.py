@@ -60,19 +60,19 @@ cardData = {
   'SWTOPTRUMPSBM015':{'cardName':'Wicket W. Warrick', 'style':35, 'ambition':2, 'pride':13, 'leadership':60, 'ttgl':12},
   'SWTOPTRUMPSBM016':{'cardName':'BB-8', 'style':28, 'ambition':10, 'pride':27, 'leadership':30, 'ttgl':10},
   'SWTOPTRUMPSBM017':{'cardName':'Rose Tico', 'style':5, 'ambition':11, 'pride':28, 'leadership':55, 'ttgl':13},
-  'SWTOPTRUMPSBM018':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM019':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM020':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM021':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM022':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM023':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM024':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM025':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM026':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM027':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM028':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM029':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM030':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11}
+  'SWTOPTRUMPSBM018':{'cardName':'Maz Kanata', 'style':30, 'ambition':8, 'pride':23, 'leadership':105, 'ttgl':19},
+  'SWTOPTRUMPSBM019':{'cardName':'Jabba The Hutt', 'style':3, 'ambition':12, 'pride':30, 'leadership':50, 'ttgl':13},
+  'SWTOPTRUMPSBM020':{'cardName':'Rey', 'style':12, 'ambition':18, 'pride':40, 'leadership':90, 'ttgl':18},
+  'SWTOPTRUMPSBM021':{'cardName':'Finn', 'style':22, 'ambition':19, 'pride':42, 'leadership':140, 'ttgl':22},
+  'SWTOPTRUMPSBM022':{'cardName':'Poe Dameron', 'style':37, 'ambition':20, 'pride':43, 'leadership':145, 'ttgl':26},
+  'SWTOPTRUMPSBM023':{'cardName':'Kylo Ren', 'style':40, 'ambition':22, 'pride':47, 'leadership':80, 'ttgl':19},
+  'SWTOPTRUMPSBM024':{'cardName':'General Hux', 'style':10, 'ambition':21, 'pride':45, 'leadership':100, 'ttgl':17},
+  'SWTOPTRUMPSBM025':{'cardName':'Clone Troopers', 'style':20, 'ambition':6, 'pride':20, 'leadership':15, 'ttgl':7},
+  'SWTOPTRUMPSBM026':{'cardName':'Captain Phasma', 'style':32, 'ambition':16, 'pride':37, 'leadership':95, 'ttgl':18},
+  'SWTOPTRUMPSBM027':{'cardName':'Emperor Palpatine', 'style':7, 'ambition':25, 'pride':52, 'leadership':45, 'ttgl':13},
+  'SWTOPTRUMPSBM028':{'cardName':'Imperial Stormtrooper', 'style':17, 'ambition':3, 'pride':15, 'leadership':10, 'ttgl':6},
+  'SWTOPTRUMPSBM029':{'cardName':'C-3PO', 'style':2, 'ambition':1, 'pride':12, 'leadership':25, 'ttgl':8},
+  'SWTOPTRUMPSBM030':{'cardName':'R2-D2', 'style':53, 'ambition':5, 'pride':18, 'leadership':20, 'ttgl':10}
 }
 
 a = ''
