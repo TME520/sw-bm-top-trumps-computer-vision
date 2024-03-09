@@ -20,16 +20,16 @@ except ImportError:
 
 def draw_interface(player_name, stage, step, battle, round, instructions, card):
   os.system('clear')
-  print(Fore.RED)
+  print(Fore.BLUE)
   print('--------------------------------------------------------------------------------')
-  print(Fore.WHITE)
+  print(Fore.RED)
   print(f'>> {player_name} <<')
-  print(f'> Stage: {stage}') 
-  print(f'> Step: {step}')
+  print(Fore.WHITE)
+  print(f'> Stage: {stage} -- Step: {step}')
   print(f'[{battle}/{round}]\n')
   print(f'> Instructions: {instructions}\n\n')
   print(f'> {card}')
-  print(Fore.RED)
+  print(Fore.BLUE)
   print('--------------------------------------------------------------------------------')
   print(Style.RESET_ALL)
 
@@ -54,12 +54,12 @@ cardData = {
   'SWTOPTRUMPSBM009':{'cardName':'Han Solo', 'style':47, 'ambition':7, 'pride':22, 'leadership':110, 'ttgl':23},
   'SWTOPTRUMPSBM010':{'cardName':'Chewbacca', 'style':27, 'ambition':9, 'pride':25, 'leadership':75, 'ttgl':13},
   'SWTOPTRUMPSBM011':{'cardName':'Lando Calrissian', 'style':50, 'ambition':22, 'pride':47, 'leadership':115, 'ttgl':24},
-  'SWTOPTRUMPSBM012':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM013':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM014':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM015':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
-  'SWTOPTRUMPSBM016':{'cardName':'First Order Stormtrooper', 'style':15, 'ambition':2, 'pride':13, 'leadership':5, 'ttgl':5},
-  'SWTOPTRUMPSBM017':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
+  'SWTOPTRUMPSBM012':{'cardName':'Darth Vader', 'style':43, 'ambition':24, 'pride':50, 'leadership':65, 'ttgl':19},
+  'SWTOPTRUMPSBM013':{'cardName':'Yoda', 'style':13, 'ambition':12, 'pride':30, 'leadership':120, 'ttgl':16},
+  'SWTOPTRUMPSBM014':{'cardName':'Boba Fett', 'style':48, 'ambition':4, 'pride':17, 'leadership':40, 'ttgl':12},
+  'SWTOPTRUMPSBM015':{'cardName':'Wicket W. Warrick', 'style':35, 'ambition':2, 'pride':13, 'leadership':60, 'ttgl':12},
+  'SWTOPTRUMPSBM016':{'cardName':'BB-8', 'style':28, 'ambition':10, 'pride':27, 'leadership':30, 'ttgl':10},
+  'SWTOPTRUMPSBM017':{'cardName':'Rose Tico', 'style':5, 'ambition':11, 'pride':28, 'leadership':55, 'ttgl':13},
   'SWTOPTRUMPSBM018':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
   'SWTOPTRUMPSBM019':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
   'SWTOPTRUMPSBM020':{'cardName':'Jango Fett', 'style':23, 'ambition':15, 'pride':35, 'leadership':35, 'ttgl':11},
